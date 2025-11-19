@@ -35,9 +35,32 @@ Admin Panel: http://localhost:3000/admin.html
 ```
 
 ### 🛑 關閉伺服器
+
+#### 方法 1：正常關閉（推薦）
 如果需要停止伺服器：
 - 在運行伺服器的終端機視窗中按 **`Ctrl + C`**
 - 或直接關閉終端機視窗
+
+#### 方法 2：強制關閉（當 Ctrl+C 無效時）
+如果找不到終端機視窗或 `Ctrl + C` 無效：
+
+```bash
+# 1. 查找佔用 3000 端口的進程
+netstat -ano | findstr :3000
+
+# 2. 終止該進程（將 PID 替換為上一步顯示的進程 ID）
+taskkill /PID 進程ID /F
+```
+
+**完整範例**：
+```bash
+# 查找進程
+netstat -ano | findstr :3000
+# 輸出：TCP    0.0.0.0:3000    0.0.0.0:0    LISTENING    9548
+
+# 終止進程（9548 是範例，請使用實際的 PID）
+taskkill /PID 9548 /F
+```
 
 ### 🔄 重新啟動伺服器
 修改 `server.js` 或 `data/users.json` 後需要重啟：
