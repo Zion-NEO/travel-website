@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的八天夢幻之旅 | My 8-Day Journey</title>
+    <meta name="description" content="探索我精彩的八天旅遊行程 - 一段難忘的冒險">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">TravelLog.</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">首頁</a></li>
+                    <li><a href="#itinerary">行程</a></li>
+                    <li><a href="#contact">聯絡</a></li>
+                    <li><a href="admin.html" target="_blank" class="btn btn-primary"
+                            style="padding: 0.5rem 1rem; color: white;">管理</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>探索未知，發現美好</h1>
+            <p>這不僅僅是一次旅行，而是一場靈魂的洗禮。跟隨我的腳步，體驗這八天的奇幻旅程。</p>
+            <a href="#itinerary" class="btn btn-primary hero-btn">查看行程</a>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section id="itinerary" class="itinerary">
+        <div class="container">
+            <div class="section-header">
+                <h2>八天行程一覽</h2>
+                <p>點擊每一天查看詳細內容</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Content will be loaded dynamically -->
+                <div style="text-align: center; padding: 2rem;">Loading itinerary...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <h3>TravelLog.</h3>
+            <p>&copy; 2025 My Travel Journey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
